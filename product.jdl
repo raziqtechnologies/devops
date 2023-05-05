@@ -1,0 +1,25 @@
+application {
+  config {
+    baseName product,
+    applicationType microservice,
+    packageName com.rts.availoffers.product,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+  }
+  entities Product
+}
+
+entity Product {
+	
+   idProduct Integer min(11) required unique,
+   thirdpartyid String,
+   universalcode String,
+   price Double,
+   weight Double,
+   noofstock Integer,
+   dimensions String
+  
+
+}
+
+paginate * with infinite-scroll

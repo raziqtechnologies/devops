@@ -1,0 +1,49 @@
+{
+  "applications": ["product"],
+  "changelogDate": "20230504113035",
+  "clientRootFolder": "product",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "product",
+  "fields": [
+    {
+      "fieldName": "idProduct",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["min", "required", "unique"],
+      "fieldValidateRulesMin": "11"
+    },
+    {
+      "fieldName": "thirdpartyid",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "universalcode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "price",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "weight",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "noofstock",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "dimensions",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "product",
+  "name": "Product",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}
